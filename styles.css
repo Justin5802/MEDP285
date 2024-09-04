@@ -1,0 +1,18 @@
+body{
+    background-color: #badda7;
+    color: #F00;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img.featured{
+    width: 400px;
+}
+
+img.about{
+    width: 550px;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
