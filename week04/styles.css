@@ -1,0 +1,56 @@
+body{
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-image: url("images/background.jpg")
+}
+
+#wrapper{
+  background-color:beige;
+  padding:40px;
+  margin: 100px;
+  border: solid 10px black;
+}
+
+nav {
+    background-color: #FFF;
+    padding: 40px 10px 10px 10px;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #F0F;
+}
+
+nav a:hover{
+    color: #F0F;
+}
+
+#webart{
+    width: 400px;
+    content: url("images/website-art.png")
+}
+
+#muze{
+    width: 400px;
+    content: url("images/Muze Robot.png")
+}
+
+p span.school{
+    color:purple;
+}
+
+img.featured{
+    width: 400px;
+}
+
+img.about{
+    width: 550px;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
