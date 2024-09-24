@@ -28,26 +28,43 @@ nav a:hover{
     color: #F0F;
 }
 
-#webart{
-    width: 400px;
-    content: url("images/website-art.png")
-}
-
-#muze{
-    width: 400px;
-    content: url("images/Muze Robot.png")
-}
-
-p span.school{
-    color:purple;
-}
-
 img.featured{
     width: 400px;
 }
 
 img.about{
     width: 550px;
+}
+
+img.movieposter1{
+    width: 200px;
+}
+
+img.movieposter2{
+    width: 228px;
+}
+img.movieposter3{
+    width:205px;
+}
+
+img.movieposter4{
+    width:200px;
+}
+
+img.movieposter5{
+    width: 200px
+}
+
+img.movieposter6{
+    width:230px;
+}
+
+img.movieposter7{
+    width: 200px;
+}
+
+img.movieposter8{
+    width: 200px;
 }
 
 a{
