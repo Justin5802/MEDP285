@@ -3,7 +3,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    background-image: url("images/background.jpg")
+    background-image: url("images/blue-background.jpg")
 }
 
 #wrapper{
@@ -21,11 +21,11 @@ nav {
 
 nav a{
     text-decoration: none;
-    color: #F0F;
+    color: blue;
 }
 
 nav a:hover{
-    color: #F0F;
+    color: blue;
 }
 
 img.featured{
