@@ -38,13 +38,16 @@ img.about{
 
 img.blue1{
     width: 200px;
+    height: 150px;
 }
 
 img.blue2{
     width: 228px;
+    height: 150px;
 }
 img.blue3{
     width:205px;
+    height: 150px;
 }
 
 img.blue4{
@@ -52,11 +55,13 @@ img.blue4{
 }
 
 img.blue5{
-    width: 200px
+    width: 230px;
+    height: 150px;
 }
 
 img.blue6{
-    width:230px;
+    width:200px;
+    height: 150px;
 }
 
 img.blue7{
@@ -64,7 +69,13 @@ img.blue7{
 }
 
 img.blue8{
+    width: 230px;
+    height: 270px;
+}
+
+img.blue9{
     width: 200px;
+    height: 270px;
 }
 
 a{
