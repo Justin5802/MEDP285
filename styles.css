@@ -3,7 +3,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    background-image: url("images/background.jpg")
+    background-image: url("images/blue-background.jpg")
 }
 
 #wrapper{
@@ -21,11 +21,11 @@ nav {
 
 nav a{
     text-decoration: none;
-    color: #F0F;
+    color: blue;
 }
 
 nav a:hover{
-    color: #F0F;
+    color: blue;
 }
 
 img.featured{
@@ -36,35 +36,46 @@ img.about{
     width: 550px;
 }
 
-img.movieposter1{
+img.blue1{
     width: 200px;
+    height: 150px;
 }
 
-img.movieposter2{
+img.blue2{
     width: 228px;
+    height: 150px;
 }
-img.movieposter3{
+img.blue3{
     width:205px;
+    height: 150px;
 }
 
-img.movieposter4{
+img.blue4{
     width:200px;
 }
 
-img.movieposter5{
-    width: 200px
+img.blue5{
+    width: 230px;
+    height: 150px;
 }
 
-img.movieposter6{
-    width:230px;
+img.blue6{
+    width:200px;
+    height: 150px;
 }
 
-img.movieposter7{
+img.blue7{
     width: 200px;
 }
 
-img.movieposter8{
+img.blue8{
+    width: 230px;
+    height: 270px;
+}
+
+img.blue9{
     width: 200px;
+    height: 270px;
 }
 
 a{
