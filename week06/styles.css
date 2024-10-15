@@ -69,6 +69,74 @@ img.op6{
     height: 150px;
 }
 
+img.op7{
+    width:200px;
+}
+
+img.op8{
+    width:230px;
+    height: 135px;
+}
+
+img.op9{
+    width:205px;
+    height: 135px;
+}
+
+img.op10{
+    width:200px;
+}
+
+img.op11{
+    width:200px;
+    height: 135px;
+}
+
+img.op12{
+    width:200px;
+}
+
+img.op13{
+    width:200px;
+}
+
+img.op14{
+    width:230px;
+    height:135px
+}
+
+img.op15{
+    width:205px;
+    height: 135px;
+}
+
+img.op16{
+    width:200px;
+    height: 135px;
+}
+
+img.op17{
+    width:200px;
+    height: 135px;
+}
+
+img.op18{
+    width:200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically if needed */
+    height: 100vh; /* Adjust as necessary */
+}
+
+img.op19 {
+    width: 975px;
+    height: 650px;
+}
+
+
 .content-container {
     flex: 1; 
     background: rgba(255, 255, 255, 0.7); 
