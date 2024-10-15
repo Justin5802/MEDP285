@@ -29,21 +29,21 @@ h1 {
 .nav-container {
     float: left;
     margin-top: 10px;
-    width: 200px; /* Set a fixed width */
-    text-align: center; /* Center the links inside the box */
+    width: 200px; 
+    text-align: center; 
 }
 
 nav {
-    border: 2px solid black; /* Border around nav links */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px; /* Padding for better spacing */
+    border: 2px solid black; 
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px; 
 }
 
 nav a {
     text-decoration: none;
     color: white; 
-    display: block; /* Each link takes up the full width */
-    margin: 5px 0; /* Space between links */
+    display: block; 
+    margin: 5px 0; 
 }
 
 nav a:hover {
@@ -59,17 +59,17 @@ nav a:hover {
 
 .footer-links {
     float: right;
-    width: 200px; /* Set a fixed width */
-    text-align: center; /* Center the links inside the box */
-    border: 2px solid black; /* Border around footer links */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px; /* Padding for better spacing */
+    width: 200px;
+    text-align: center; 
+    border: 2px solid black;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
 }
 
 footer a {
     color: white; 
-    display: block; /* Each link takes up the full width */
-    margin: 5px 0; /* Space between links */
+    display: block; 
+    margin: 5px 0; 
 }
 
 footer a:hover {
@@ -169,8 +169,8 @@ img.op18{
 .container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically if needed */
-    height: 100vh; /* Adjust as necessary */
+    align-items: center; 
+    height: 100vh; 
 }
 
 img.op19 {
@@ -198,4 +198,49 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; 
+}
+
+.circle {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    background: conic-gradient(black, white); 
+    animation: spin 4s linear infinite;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
+
+.optical-art {
+    position: relative;
+    width: 250px; 
+    height: 175px; 
+    margin-top: 50px; 
+    margin-left: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.spiral {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%; 
+    height: 300%; 
+    border-radius: 50%;
+    background: repeating-conic-gradient(
+        black 0deg, 
+        black 10deg, 
+        white 10deg, 
+        white 20deg
+    );
+    transform: translate(-50%, -50%) rotate(0deg);
 }
