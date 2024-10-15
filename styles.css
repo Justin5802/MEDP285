@@ -19,7 +19,6 @@ h1 {
     margin: 0;
 }
 
-
 .header-container {
     background-color: black;
     color: white; 
@@ -27,19 +26,62 @@ h1 {
     padding: 20px 0;
 }
 
-.header-container nav {
+.nav-container {
+    float: left;
     margin-top: 10px;
+    width: 200px; /* Set a fixed width */
+    text-align: center; /* Center the links inside the box */
+}
+
+nav {
+    border: 2px solid black; /* Border around nav links */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Padding for better spacing */
 }
 
 nav a {
     text-decoration: none;
     color: white; 
-    margin: 0 15px;
+    display: block; /* Each link takes up the full width */
+    margin: 5px 0; /* Space between links */
 }
 
 nav a:hover {
     text-decoration: underline; 
 }
+
+.footer-container {
+    background-color: darkgreen;
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    float: right;
+    width: 200px; /* Set a fixed width */
+    text-align: center; /* Center the links inside the box */
+    border: 2px solid black; /* Border around footer links */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Padding for better spacing */
+}
+
+footer a {
+    color: white; 
+    display: block; /* Each link takes up the full width */
+    margin: 5px 0; /* Space between links */
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+.content-container {
+    flex: 1; 
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 40px; 
+}
+
 
 img.op1{
     width: 200px;
