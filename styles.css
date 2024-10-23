@@ -1,246 +1,59 @@
-body {
-    font-family: "Kode Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    background-image: url("images/op-bg.jpg");
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat; 
-    margin: 0; 
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-}
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /* END border-box fix */
 
-h1 {
-    font-size: 3em; 
-    font-weight: bold; 
+  body {
+    padding: 0;
     margin: 0;
-}
+        display: flex;
+        justify-content: center;
+  }
 
-.header-container {
-    background-color: black;
-    color: white; 
-    text-align: center;
-    padding: 20px 0;
-}
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+  }
 
-.nav-container {
-    float: left;
-    margin-top: 10px;
-    width: 200px; 
-    text-align: center; 
-}
-
-nav {
-    border: 2px solid black; 
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px; 
-}
-
-nav a {
-    text-decoration: none;
-    color: white; 
-    display: block; 
-    margin: 5px 0; 
-}
-
-nav a:hover {
-    text-decoration: underline; 
-}
-
-.footer-container {
-    background-color: darkgreen;
-    color: white; 
+  /* Add padding to all of the .container child elements */
+  .container > * {
     padding: 20px;
-    text-align: center;
-}
+  }
 
-.footer-links {
-    float: right;
-    width: 200px;
-    text-align: center; 
-    border: 2px solid black;
-    background: rgba(0, 0, 0, 0.5); 
-    padding: 10px; 
-}
-
-footer a {
-    color: white; 
-    display: block; 
-    margin: 5px 0; 
-}
-
-footer a:hover {
-    text-decoration: underline; 
-}
-
-.content-container {
-    flex: 1; 
-    background: rgba(255, 255, 255, 0.7); 
-    padding: 40px; 
-}
-
-
-img.op1{
-    width: 200px;
-    height: 150px;
-}
-
-img.op2{
-    width: 228px;
-    height: 150px;
-}
-img.op3{
-    width:205px;
-    height: 150px;
-}
-
-img.op4{
-    width:200px;
-}
-
-img.op5{
-    width:200px;
-    height: 150px;
-}
-
-img.op6{
-    width:200px;
-    height: 150px;
-}
-
-img.op7{
-    width:200px;
-}
-
-img.op8{
-    width:230px;
-    height: 135px;
-}
-
-img.op9{
-    width:205px;
-    height: 135px;
-}
-
-img.op10{
-    width:200px;
-}
-
-img.op11{
-    width:200px;
-    height: 135px;
-}
-
-img.op12{
-    width:200px;
-}
-
-img.op13{
-    width:200px;
-}
-
-img.op14{
-    width:230px;
-    height:135px
-}
-
-img.op15{
-    width:205px;
-    height: 135px;
-}
-
-img.op16{
-    width:200px;
-    height: 135px;
-}
-
-img.op17{
-    width:200px;
-    height: 135px;
-}
-
-img.op18{
-    width:200px;
-}
-
-.container {
+  .container{
+    color: white;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh; 
-}
+    flex-wrap: wrap;
+        max-width: 1000px;
+  }
 
-img.op19 {
-    width: 975px;
-    height: 650px;
-}
-
-
-.content-container {
-    flex: 1; 
-    background: rgba(255, 255, 255, 0.7); 
-    padding: 40px; 
-}
-
-.footer-container {
-    background-color: darkgreen;
-    color: white; 
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: white; 
-}
-
-footer a:hover {
-    text-decoration: underline; 
-}
-
-.circle {
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    background: conic-gradient(black, white); 
-    animation: spin 4s linear infinite;
-    margin-top: 20px;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg); 
-    }
-}
-
-.optical-art {
-    position: relative;
-    width: 250px; 
-    height: 175px; 
-    margin-top: 50px; 
-    margin-left: 580px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.spiral {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300%; 
-    height: 300%; 
-    border-radius: 50%;
-    background: repeating-conic-gradient(
-        black 0deg, 
-        black 10deg, 
-        white 10deg, 
-        white 20deg
-    );
-    transform: translate(-50%, -50%) rotate(0deg);
-}
+  header {
+    background: purple;
+    flex: 1 0 100%; /* grow on, shrink off, span width of browser */
+    order: 1;
+  }
+  main {
+    background: skyblue;
+      flex: 1 1 500px; 
+      order: 3;
+  }
+  
+  nav {
+    background: orangered;
+      flex: 1 0 200px; /* grow but do not shrink less than basis */
+      order: 2;
+  }
+  aside {
+    background: burlywood;
+      flex: 1 0 200px; /* grow but do not shrink less than basis */
+      order: 4;
+  }
+  
+  footer {
+    background: goldenrod;
+      flex: 1 0 100%; /* grow on, shrink off, span width of browser */
+      order: 5;
+  }
