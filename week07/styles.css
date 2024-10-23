@@ -7,53 +7,53 @@ html {
   }
   /* END border-box fix */
 
+.container{
+    color: white;
+    display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .container > * {
+    padding: 20px;
+  }
+
   body {
     padding: 0;
     margin: 0;
-        display: flex;
-        justify-content: center;
+    background-color: #ccc;
   }
 
   h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
   }
 
-  /* Add padding to all of the .container child elements */
-  .container > * {
-    padding: 20px;
-  }
 
-  .container{
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-        max-width: 1000px;
-  }
 
   header {
     background: purple;
-    flex: 1 0 100%; /* grow on, shrink off, span width of browser */
-    order: 1;
+      grid-column: 1 / 13;
   }
   main {
     background: skyblue;
-      flex: 1 1 500px; 
-      order: 3;
+      grid-column: 4 / 10;
   }
   
   nav {
     background: orangered;
-      flex: 1 0 200px; /* grow but do not shrink less than basis */
-      order: 2;
+      grid-column: 1 / 4;
+
   }
   aside {
     background: burlywood;
-      flex: 1 0 200px; /* grow but do not shrink less than basis */
-      order: 4;
+      grid-column: 10 / 13;
+  }
+  main, nav, aside {
+    grid-row: 2 / 4;
   }
   
   footer {
-    background: goldenrod;
-      flex: 1 0 100%; /* grow on, shrink off, span width of browser */
-      order: 5;
+    background: purple;
+      grid-column: 1 / 13;
   }
