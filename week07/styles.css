@@ -31,29 +31,29 @@ html {
   }
 
   header {
-    background: skyblue;
+    background: purple;
     flex: 1 0 100%; /* grow on, shrink off, span width of browser */
     order: 1;
   }
   main {
-    background: slategray;
+    background: skyblue;
       flex: 1 1 500px; 
       order: 3;
   }
   
   nav {
-    background: cadetblue;
+    background: orangered;
       flex: 1 0 200px; /* grow but do not shrink less than basis */
       order: 2;
   }
   aside {
-    background: seagreen;
+    background: burlywood;
       flex: 1 0 200px; /* grow but do not shrink less than basis */
       order: 4;
   }
   
   footer {
-    background: darkslateblue;
+    background: goldenrod;
       flex: 1 0 100%; /* grow on, shrink off, span width of browser */
       order: 5;
   }
