@@ -1,59 +1,108 @@
 /* START border-box fix */
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  /* END border-box fix */
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+  padding: 0;
+  margin: 0;
+      display: flex;
+      justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+/* Add padding to all of the .container child elements */
+.container > * {
+  padding: 20px;
+}
 
 .container{
-    color: white;
-    display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
-      width: 80%;
-      margin: 0 auto;
-  }
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+      max-width: 1000px;
+}
 
-  .container > * {
-    padding: 20px;
-  }
+header {
+  background: purple;
+  flex: 1 0 100%; /* grow on, shrink off, span width of browser */
+  order: 1;
+}
+main {
+  background: skyblue;
+    flex: 1 1 500px; 
+    order: 3;
+}
 
-  body {
-    padding: 0;
-    margin: 0;
-    background-color: #ccc;
-  }
+nav {
+  background: orangered;
+    flex: 1 0 200px; 
+    order: 2;
+}
+aside {
+  background: burlywood;
+    flex: 1 0 200px; 
+    order: 4;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-  }
+footer {
+  background: goldenrod;
+    flex: 1 0 100%; 
+    order: 5;
+}
 
 
+.spinning-square-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
 
-  header {
-    background: purple;
-      grid-column: 1 / 13;
-  }
-  main {
-    background: skyblue;
-      grid-column: 4 / 10;
-  }
-  
-  nav {
-    background: orangered;
-      grid-column: 1 / 4;
+.spinning-square {
+  width: 100px; 
+  height: 100px;
+  background-color: blue; 
+  animation: spin 2s linear infinite, colorChange 2s linear infinite; 
+  margin: 0 10px; 
+}
 
+/* Keyframes for spinning */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  aside {
-    background: burlywood;
-      grid-column: 10 / 13;
+  to {
+    transform: rotate(360deg);
   }
-  main, nav, aside {
-    grid-row: 2 / 4;
+}
+
+/* Keyframes for color change */
+@keyframes colorChange {
+  0% {
+    background-color: blue;
   }
-  
-  footer {
-    background: purple;
-      grid-column: 1 / 13;
+  50% {
+    background-color: orange;
   }
+  100% {
+    background-color: blue;
+  }
+}
+
+.moving-square {
+  width: 100px; 
+  height: 100px;
+  background-color: blue; 
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  transition: background-color 0.3s ease; 
+}
