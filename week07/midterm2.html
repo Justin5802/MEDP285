@@ -26,9 +26,17 @@
                         { type: 'circle', x: 300, y: 100, radius: 25, color: 'green' },
                         { type: 'triangle', x: 500, y: 100, size: 50, color: 'blue' },
                         { type: 'rectangle', x: 100, y: 300, width: 80, height: 40, color: 'yellow' },
-                        { type: 'octagon', x: 300, y: 300, size: 50, color: 'purple' }, // Octagon
-                        { type: 'parallelogram', x: 600, y: 300, width: 80, height: 40, color: 'orange', skew: 20 } // Parallelogram
+                        { type: 'octagon', x: 300, y: 300, size: 50, color: 'purple' },
+                        { type: 'parallelogram', x: 600, y: 300, width: 80, height: 40, color: 'orange', skew: 20 }
                     ];
+
+                    const MAX_SIZE = 150; // Maximum size for square and triangle
+                    const MAX_CIRCLE_RADIUS = 75; // Maximum radius for circle
+                    const MAX_RECTANGLE_WIDTH = 200; // Maximum width for rectangle
+                    const MAX_RECTANGLE_HEIGHT = 100; // Maximum height for rectangle
+                    const MAX_OCTAGON_SIZE = 75; // Maximum size for octagon
+                    const MAX_PARALLELOGRAM_WIDTH = 150; // Maximum width for parallelogram
+                    const MAX_PARALLELOGRAM_HEIGHT = 75; // Maximum height for parallelogram
 
                     let isDragging = false;
                     let isResizing = false;
@@ -127,24 +135,24 @@
 
                             switch (currentShape.type) {
                                 case 'square':
-                                    currentShape.size = Math.max(10, currentShape.size + dx);
+                                    currentShape.size = Math.max(10, Math.min(MAX_SIZE, currentShape.size + dx));
                                     break;
                                 case 'circle':
-                                    currentShape.radius = Math.max(10, currentShape.radius + dx / 2);
+                                    currentShape.radius = Math.max(10, Math.min(MAX_CIRCLE_RADIUS, currentShape.radius + dx / 2));
                                     break;
                                 case 'triangle':
-                                    currentShape.size = Math.max(10, currentShape.size + dx);
+                                    currentShape.size = Math.max(10, Math.min(MAX_SIZE, currentShape.size + dx));
                                     break;
                                 case 'rectangle':
-                                    currentShape.width = Math.max(10, currentShape.width + dx);
-                                    currentShape.height = Math.max(10, currentShape.height + dy);
+                                    currentShape.width = Math.max(10, Math.min(MAX_RECTANGLE_WIDTH, currentShape.width + dx));
+                                    currentShape.height = Math.max(10, Math.min(MAX_RECTANGLE_HEIGHT, currentShape.height + dy));
                                     break;
                                 case 'octagon':
-                                    currentShape.size = Math.max(10, currentShape.size + dx);
+                                    currentShape.size = Math.max(10, Math.min(MAX_OCTAGON_SIZE, currentShape.size + dx));
                                     break;
                                 case 'parallelogram':
-                                    currentShape.width = Math.max(10, currentShape.width + dx);
-                                    currentShape.height = Math.max(10, currentShape.height + dy);
+                                    currentShape.width = Math.max(10, Math.min(MAX_PARALLELOGRAM_WIDTH, currentShape.width + dx));
+                                    currentShape.height = Math.max(10, Math.min(MAX_PARALLELOGRAM_HEIGHT, currentShape.height + dy));
                                     break;
                             }
 

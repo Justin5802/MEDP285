@@ -28,7 +28,7 @@ function handleMouseEnter() {
 
     // Check if the counter has reached 25
     if (catchCount === 25) {
-        message.textContent = "Great job! You caught the square!"; 
+        message.innerHTML = "Great job! You caught the square!"; 
         square.removeEventListener('mouseenter', handleMouseEnter); 
         square.textContent = "☹️";
         square.style.fontSize = "50px"; 
@@ -37,12 +37,32 @@ function handleMouseEnter() {
         square.style.alignItems = "center"; 
         square.style.justifyContent = "center"; 
         
-       
         square.addEventListener('click', () => {
             square.style.display = "none"; 
-            message.textContent = "Oh my god, you just murdered that square! It was already caught, what is wrong with you???"; // Update the message
+            message.innerHTML = "Oh my god, you just murdered that square! It was already caught, what is wrong with you??? "; // Update the message
+            
+            
+            const restartButton = document.createElement('button'); 
+            restartButton.textContent = "RESTART";
+            restartButton.style.marginLeft = "10px"; 
+            message.appendChild(restartButton); 
+            
+            restartButton.addEventListener('click', restartGame); 
         });
     }
+}
+
+// Function to restart the game
+function restartGame() {
+    catchCount = 0; 
+    message.innerHTML = ""; 
+    square.style.display = "flex";
+    square.style.left = "50%"; 
+    square.style.top = "50%";
+    square.style.transform = "translate(-50%, -50%)"; 
+    square.textContent = ""; 
+
+    square.addEventListener('mouseenter', handleMouseEnter); 
 }
 
 // Add event listener for mouse enter
