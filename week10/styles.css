@@ -25,13 +25,13 @@ h1 {
 	padding: 10px;
 }
 
-.plant-holder {
+.shapes {
 	position: relative;
 	height: 13%;
 	left: -10px;
 }
 
-.plant {
+.shape {
 	position: absolute;
 	max-width: 150%;
 	max-height: 150%;
