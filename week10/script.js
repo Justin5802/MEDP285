@@ -1,6 +1,6 @@
-function dragElement(terrariumElement) {
+function dragElement(canvasElement) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    terrariumElement.onpointerdown = pointerDrag;
+    canvasElement.onpointerdown = pointerDrag;
 
     function pointerDrag(e) {
         e.preventDefault();
@@ -16,8 +16,8 @@ function dragElement(terrariumElement) {
         pos2 = pos4 - e.clientY;
         pos3 = e.clientX;
         pos4 = e.clientY;
-        terrariumElement.style.top = (terrariumElement.offsetTop - pos2) + 'px';
-        terrariumElement.style.left = (terrariumElement.offsetLeft - pos1) + 'px';
+        canvasElement.style.top = (canvasElement.offsetTop - pos2) + 'px';
+        canvasElement.style.left = (canvasElement.offsetLeft - pos1) + 'px';
     }
 
     function stopElementDrag() {
