@@ -57,57 +57,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-  background: purple;
+  background: green;
   flex: 1 0 100%; /* grow on, shrink off, span width of browser */
   order: 1;
 }
 main {
-  background: skyblue;
+  background: lightseagreen;
     flex: 1 1 500px; 
     order: 3;
 }
 
 nav {
-  background: orangered;
+  background: palevioletred;
     flex: 1 0 200px; 
     order: 2;
 }
-aside {
-  background: burlywood;
-    flex: 1 0 200px; 
-    order: 4;
-}
 
 footer {
-  background: goldenrod;
+  background: skyblue;
     flex: 1 0 100%; 
     order: 5;
 }
 
-
-.spinning-square-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; 
-}
-
-.spinning-square {
-  width: 100px; 
-  height: 100px;
-  background-color: blue; 
-  animation: spin 2s linear infinite, colorChange 2s linear infinite; 
-  margin: 0 10px; 
-}
-
-/* Keyframes for spinning */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* Keyframes for color change */
 @keyframes colorChange {
@@ -177,4 +148,10 @@ img.shape-art5{
 img.shape-art6{
   width: 150px;
   height: 150px;
+}
+
+canvas {
+  display: block;
+  background: #000; 
+  border: 2px solid white; 
 }
