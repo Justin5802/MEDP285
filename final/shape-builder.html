@@ -1,32 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Shapes Website Part II</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <div class="container">
-            <header><h1>The Shapes Website Part II</h1></header>
-            
-            <main>
-                <h2>Exhibit 2: Make Your Own Structures using Shapes!</h2>
-                <h3>Here are some cool 2D shape models that you can interact with.</h3>
-                <p>Click and drag to move the shapes around. </p>
-                <canvas id="canvas" width="800" height="400"></canvas>
+<html lang="en">
+	<head>
+		<title>The Shapes Website Part II </title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="styles2.css" />
+		<script src="shape-builder.js" defer></script>
+	</head>
 
-            </main>
-            <nav>
-                <h2>Pages</h2>
-                <ul>
-                    <li><a href="clicker.html">Clicker</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shape-builder.html">2D Shape Models</a></li>
-                </ul>
-            </nav>
-            
-            <footer><h2>THANK YOU FOR VISITING MY SITE</h2><p><a href="https://www.linkedin.com/in/justin-chu5802/" target="_blank">ABOUT ME</a></p></footer>
-        </div>
-    </body>
+	<body>
+		<div id="page">
+			<h1>Exhibit 2: Make Your Own Structures using Shapes!</h1>
+
+			<div id="left-container" class="container">
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape1" src="./images/shape1.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape2" src="./images/shape2.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape3" src="./images/shape3.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape4" src="./images/shape4.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape5" src="./images/shape5.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape6" src="./images/shape6.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape7" src="./images/shape7.png" />
+				</div>
+			</div>
+			<div id="right-container" class="container">
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape8" src="./images/shape8.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape9" src="./images/shape9.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape10" src="./images/shape10.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape11" src="./images/shape11.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape12" src="./images/shape12.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape13" src="./images/shape13.png" />
+				</div>
+				<div class="shapes">
+					<img class="shape" alt="shape" id="shape14" src="./images/shape14.png" />
+				</div>
+			</div>
+
+			<div id="shape-canvas">
+				<div class="canvas-top"></div>
+				<div class="canvas-walls">
+					
+				</div>
+				<div class="floor"></div>
+				<div class="canvas-bottom"></div>
+			</div>
+		</div>
+	</body>
 </html>
+
