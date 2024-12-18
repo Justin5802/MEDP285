@@ -126,3 +126,36 @@ canvas {
   background: #000; 
   border: 2px solid white; 
 }
+
+.nav-shape {
+  width: 30px; 
+  height: 30px; 
+  transition: transform 0.3s ease; 
+}
+
+.nav-shape:hover {
+  transform: scale(1.2); 
+}
+
+
+#custom-cursor {
+  position: absolute;
+  width: 30px; 
+  height: 30px;
+  border-radius: 50%;
+  pointer-events: none; 
+  transform: translate(-50%, -50%); 
+  z-index: 9999; 
+  background-color: #F39C12;
+  transition: background-color 0.3s ease, transform 0.1s; 
+}
+
+
+body {
+  cursor: none; 
+}
+
+
+.nav-shape:hover {
+  transform: scale(1.2);
+}
