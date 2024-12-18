@@ -8,6 +8,12 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	color: #3a241d;
+	text-align: center;
+}
+
+
 #left-container {
 	left: 0px;
 }
